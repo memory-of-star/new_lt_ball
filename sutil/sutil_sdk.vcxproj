@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA1DBAA5-D88F-3AD6-A119-8252791579E0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>sutil_sdk</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\optix6.5\SDK\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sutil_sdk.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sutil_sdk</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\optix6.5\SDK\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sutil_sdk.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sutil_sdk</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\optix6.5\SDK\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sutil_sdk.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sutil_sdk</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\optix6.5\SDK\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sutil_sdk.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sutil_sdk</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4355;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR="Debug";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR=\"Debug\";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -D build_configuration:STRING=$(ConfigurationName) -D output_directory:PATH=D:/optix6.5/SDK/bin/$(Configuration) -D source_dll:FILE=D:/optix6.5/SDK/support/freeglut/win64/Release/freeglut.dll -P D:/optix6.5/SDK/CMake/CopyDLL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\optix6.5\lib64\optix.6.5.0.lib;..\support\freeglut\win64\Release\freeglut.lib;opengl32.lib;glu32.lib;D:\my_cuda\deve\lib\x64\nvrtc.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/optix6.5/SDK/lib/Debug/sutil_sdk.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/optix6.5/SDK/bin/Debug/sutil_sdk.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4355;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR="Release";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR=\"Release\";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -D build_configuration:STRING=$(ConfigurationName) -D output_directory:PATH=D:/optix6.5/SDK/bin/$(Configuration) -D source_dll:FILE=D:/optix6.5/SDK/support/freeglut/win64/Release/freeglut.dll -P D:/optix6.5/SDK/CMake/CopyDLL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\optix6.5\lib64\optix.6.5.0.lib;..\support\freeglut\win64\Release\freeglut.lib;opengl32.lib;glu32.lib;D:\my_cuda\deve\lib\x64\nvrtc.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/optix6.5/SDK/lib/Release/sutil_sdk.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/optix6.5/SDK/bin/Release/sutil_sdk.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4355;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR="MinSizeRel";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR=\"MinSizeRel\";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -D build_configuration:STRING=$(ConfigurationName) -D output_directory:PATH=D:/optix6.5/SDK/bin/$(Configuration) -D source_dll:FILE=D:/optix6.5/SDK/support/freeglut/win64/Release/freeglut.dll -P D:/optix6.5/SDK/CMake/CopyDLL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\optix6.5\lib64\optix.6.5.0.lib;..\support\freeglut\win64\Release\freeglut.lib;opengl32.lib;glu32.lib;D:\my_cuda\deve\lib\x64\nvrtc.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/optix6.5/SDK/lib/MinSizeRel/sutil_sdk.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/optix6.5/SDK/bin/MinSizeRel/sutil_sdk.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4355;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR="RelWithDebInfo";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;NOMINMAX;GLEW_BUILD;GLUT_FOUND;GLUT_NO_LIB_PRAGMA;CMAKE_INTDIR=\"RelWithDebInfo\";sutil_sdk_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;D:\optix6.5\SDK\support\freeglut\include;D:\optix6.5\SDK\cuda;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -D build_configuration:STRING=$(ConfigurationName) -D output_directory:PATH=D:/optix6.5/SDK/bin/$(Configuration) -D source_dll:FILE=D:/optix6.5/SDK/support/freeglut/win64/Release/freeglut.dll -P D:/optix6.5/SDK/CMake/CopyDLL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\optix6.5\lib64\optix.6.5.0.lib;..\support\freeglut\win64\Release\freeglut.lib;opengl32.lib;glu32.lib;D:\my_cuda\deve\lib\x64\nvrtc.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/optix6.5/SDK/lib/RelWithDebInfo/sutil_sdk.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/optix6.5/SDK/bin/RelWithDebInfo/sutil_sdk.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\optix6.5\SDK\sutil\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/optix6.5/SDK/sutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/sutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\optix6.5\SDK\sutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/optix6.5/SDK/sutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/sutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\optix6.5\SDK\sutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/optix6.5/SDK/sutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/sutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\optix6.5\SDK\sutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/optix6.5/SDK/sutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/sutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\optix6.5\SDK\sutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\optix6.5\SDK\cuda\common.h" />
+    <ClInclude Include="D:\optix6.5\SDK\cuda\helpers.h" />
+    <ClInclude Include="D:\optix6.5\SDK\cuda\intersection_refinement.h" />
+    <ClInclude Include="D:\optix6.5\SDK\cuda\phong.h" />
+    <None Include="D:\optix6.5\SDK\cuda\phong.cu">
+    </None>
+    <ClInclude Include="D:\optix6.5\SDK\cuda\random.h" />
+    <None Include="D:\optix6.5\SDK\cuda\triangle_mesh.cu">
+    </None>
+    <ClCompile Include="D:\optix6.5\SDK\sutil\rply-1.01\rply.c" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\rply-1.01\rply.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\Arcball.cpp" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\Arcball.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\HDRLoader.cpp" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\HDRLoader.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\Mesh.cpp" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\Mesh.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\OptiXMesh.cpp" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\OptiXMesh.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\PPMLoader.cpp" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\PPMLoader.h" />
+    <ClInclude Include="D:\optix6.5\SDK\sampleConfig.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\sutil.cpp" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\sutil.h" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\sutilapi.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\tinyobjloader\tiny_obj_loader.cc" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\tinyobjloader\tiny_obj_loader.h" />
+    <ClCompile Include="D:\optix6.5\SDK\sutil\glew.c" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\GL\glew.h" />
+    <ClInclude Include="D:\optix6.5\SDK\sutil\GL\wglew.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\optix6.5\SDK\ZERO_CHECK.vcxproj">
+      <Project>{28CD2D61-84B5-3987-A2C8-235231914EE5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

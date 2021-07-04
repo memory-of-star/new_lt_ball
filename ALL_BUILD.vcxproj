@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD8D8195-6A65-3CCF-BE6B-439EC08B4707}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\optix6.5\include;D:\optix6.5\SDK\sutil;D:\optix6.5\SDK;D:\optix6.5\include\optixu;D:\optix6.5\SDK\support\mdl-sdk\include;D:\my_cuda\deve\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\optix6.5\SDK\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/optix6.5/SDK/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindOpenGL.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\optix6.5\SDK\CMake\CompilerInfo.cmake;D:\optix6.5\SDK\CMake\ConfigCompilerFlags.cmake;D:\optix6.5\SDK\CMake\FindCUDA.cmake;D:\optix6.5\SDK\CMake\FindCUDA\select_compute_arch.cmake;D:\optix6.5\SDK\CMake\FindMDLWrapper.cmake;D:\optix6.5\SDK\CMake\FindOptiX.cmake;D:\optix6.5\SDK\CMake\FindSUtilGLUT.cmake;D:\optix6.5\SDK\CMake\Macros.cmake;D:\optix6.5\SDK\CMake\sse_support.h.in;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCXXCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeRCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeSystem.cmake;D:\optix6.5\SDK\sampleConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\optix6.5\SDK\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/optix6.5/SDK/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindOpenGL.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\optix6.5\SDK\CMake\CompilerInfo.cmake;D:\optix6.5\SDK\CMake\ConfigCompilerFlags.cmake;D:\optix6.5\SDK\CMake\FindCUDA.cmake;D:\optix6.5\SDK\CMake\FindCUDA\select_compute_arch.cmake;D:\optix6.5\SDK\CMake\FindMDLWrapper.cmake;D:\optix6.5\SDK\CMake\FindOptiX.cmake;D:\optix6.5\SDK\CMake\FindSUtilGLUT.cmake;D:\optix6.5\SDK\CMake\Macros.cmake;D:\optix6.5\SDK\CMake\sse_support.h.in;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCXXCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeRCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeSystem.cmake;D:\optix6.5\SDK\sampleConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\optix6.5\SDK\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/optix6.5/SDK/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindOpenGL.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\optix6.5\SDK\CMake\CompilerInfo.cmake;D:\optix6.5\SDK\CMake\ConfigCompilerFlags.cmake;D:\optix6.5\SDK\CMake\FindCUDA.cmake;D:\optix6.5\SDK\CMake\FindCUDA\select_compute_arch.cmake;D:\optix6.5\SDK\CMake\FindMDLWrapper.cmake;D:\optix6.5\SDK\CMake\FindOptiX.cmake;D:\optix6.5\SDK\CMake\FindSUtilGLUT.cmake;D:\optix6.5\SDK\CMake\Macros.cmake;D:\optix6.5\SDK\CMake\sse_support.h.in;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCXXCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeRCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeSystem.cmake;D:\optix6.5\SDK\sampleConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\optix6.5\SDK\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/optix6.5/SDK/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\bin\cmake.exe -SD:/optix6.5/SDK -BD:/optix6.5/SDK --check-stamp-file D:/optix6.5/SDK/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindOpenGL.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Users\cyq10\Downloads\cmake-3.21.0-rc2-windows-x86_64\cmake-3.21.0-rc2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\optix6.5\SDK\CMake\CompilerInfo.cmake;D:\optix6.5\SDK\CMake\ConfigCompilerFlags.cmake;D:\optix6.5\SDK\CMake\FindCUDA.cmake;D:\optix6.5\SDK\CMake\FindCUDA\select_compute_arch.cmake;D:\optix6.5\SDK\CMake\FindMDLWrapper.cmake;D:\optix6.5\SDK\CMake\FindOptiX.cmake;D:\optix6.5\SDK\CMake\FindSUtilGLUT.cmake;D:\optix6.5\SDK\CMake\Macros.cmake;D:\optix6.5\SDK\CMake\sse_support.h.in;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeCXXCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeRCCompiler.cmake;D:\optix6.5\SDK\CMakeFiles\3.21.0-rc2\CMakeSystem.cmake;D:\optix6.5\SDK\sampleConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\optix6.5\SDK\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\optix6.5\SDK\ZERO_CHECK.vcxproj">
+      <Project>{28CD2D61-84B5-3987-A2C8-235231914EE5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixBuffersOfBuffers\optixBuffersOfBuffers.vcxproj">
+      <Project>{4335BAA5-1218-3126-BB0D-D5ECA43647F1}</Project>
+      <Name>optixBuffersOfBuffers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixCallablePrograms\optixCallablePrograms.vcxproj">
+      <Project>{59867EAB-9BC9-3555-8C1B-5BC0473709F0}</Project>
+      <Name>optixCallablePrograms</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixCompressedTexture\optixCompressedTexture.vcxproj">
+      <Project>{D1FF54AF-0230-30BE-B322-15EE1615E141}</Project>
+      <Name>optixCompressedTexture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixConsole\optixConsole.vcxproj">
+      <Project>{22BA9554-23AC-3E74-A30A-E500A30BFB55}</Project>
+      <Name>optixConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixDemandLoadBuffer\optixDemandLoadBuffer.vcxproj">
+      <Project>{396F5369-8058-3E78-8747-0A29072DA10A}</Project>
+      <Name>optixDemandLoadBuffer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixDemandLoadTexture\optixDemandLoadTexture.vcxproj">
+      <Project>{DDD51FDD-14CB-32B3-B19F-837B308420AE}</Project>
+      <Name>optixDemandLoadTexture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixDenoiser\optixDenoiser.vcxproj">
+      <Project>{F203D15A-5838-3B33-A57C-BCA4C13D862C}</Project>
+      <Name>optixDenoiser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixDeviceQuery\optixDeviceQuery.vcxproj">
+      <Project>{59E1FBF0-5267-322D-844F-A28F9C73E97A}</Project>
+      <Name>optixDeviceQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixDynamicGeometry\optixDynamicGeometry.vcxproj">
+      <Project>{CA19977A-6D69-3F90-9ECD-6002482732AB}</Project>
+      <Name>optixDynamicGeometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixGeometryTriangles\optixGeometryTriangles.vcxproj">
+      <Project>{5183F299-D154-33E8-AE44-D4FB170ED432}</Project>
+      <Name>optixGeometryTriangles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixHello\optixHello.vcxproj">
+      <Project>{87F7F356-9879-37D6-876B-FBE15E862E94}</Project>
+      <Name>optixHello</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixInstancing\optixInstancing.vcxproj">
+      <Project>{7BD898CE-C387-3128-B8E6-A6F78CC0C9A2}</Project>
+      <Name>optixInstancing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixMDLDisplacement\optixMDLDisplacement.vcxproj">
+      <Project>{F461B7E4-DD40-3062-BB4A-764488BC3652}</Project>
+      <Name>optixMDLDisplacement</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixMDLExpressions\optixMDLExpressions.vcxproj">
+      <Project>{E844BB9D-4627-344A-8A3D-CC7154461345}</Project>
+      <Name>optixMDLExpressions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixMDLSphere\optixMDLSphere.vcxproj">
+      <Project>{33E59278-1BC5-33A4-9412-8347FB4C6FDC}</Project>
+      <Name>optixMDLSphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixMeshViewer\optixMeshViewer.vcxproj">
+      <Project>{0CEC8008-10C6-3E6A-96DC-20F4A31933E4}</Project>
+      <Name>optixMeshViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixMotionBlur\optixMotionBlur.vcxproj">
+      <Project>{93C110A4-CCF4-34D7-892D-F6DCAE21BA31}</Project>
+      <Name>optixMotionBlur</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixParticles\optixParticles.vcxproj">
+      <Project>{2FB7C401-B363-334A-9ECD-9C1FE0E0FE71}</Project>
+      <Name>optixParticles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixPathTracer\optixPathTracer.vcxproj">
+      <Project>{3E1BEAC4-149E-3C9B-B40A-62A144611B56}</Project>
+      <Name>optixPathTracer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixPathTracerTiled\optixPathTracerTiled.vcxproj">
+      <Project>{CB359DFD-32DF-33EE-B56D-D5A6AE06ED43}</Project>
+      <Name>optixPathTracerTiled</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixPrimitiveIndexOffsets\optixPrimitiveIndexOffsets.vcxproj">
+      <Project>{A66F15B2-C410-3678-BD6B-137542B5E4C0}</Project>
+      <Name>optixPrimitiveIndexOffsets</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixRaycasting\optixRaycasting.vcxproj">
+      <Project>{355BCDDF-1B14-3709-A328-0ED814502200}</Project>
+      <Name>optixRaycasting</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixSphere\optixSphere.vcxproj">
+      <Project>{2EB45A90-20CA-3FD7-BC46-109AEFD2C3C4}</Project>
+      <Name>optixSphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixSpherePP\optixSpherePP.vcxproj">
+      <Project>{F61F7586-91DE-30D3-8C16-0ED2C5F2E146}</Project>
+      <Name>optixSpherePP</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixTextureSampler\optixTextureSampler.vcxproj">
+      <Project>{8325651D-4653-30BA-8297-AD156AFFBE43}</Project>
+      <Name>optixTextureSampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixTutorial\optixTutorial.vcxproj">
+      <Project>{BF4D7C13-FEB4-3160-8754-A7E4719274DD}</Project>
+      <Name>optixTutorial</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\optixWhitted\optixWhitted.vcxproj">
+      <Project>{A8A56629-81B8-3881-AF42-6DFEAEB987EE}</Project>
+      <Name>optixWhitted</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\primeInstancing\primeInstancing.vcxproj">
+      <Project>{8E225740-8643-34B7-A6AE-D829CDD2D01E}</Project>
+      <Name>primeInstancing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\primeMasking\primeMasking.vcxproj">
+      <Project>{40E2EAAF-D36F-3D98-A479-AD2139D92AF8}</Project>
+      <Name>primeMasking</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\primeMultiBuffering\primeMultiBuffering.vcxproj">
+      <Project>{5E089A32-4F7B-354A-B9B1-8AEF56A2A8A2}</Project>
+      <Name>primeMultiBuffering</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\primeMultiGpu\primeMultiGpu.vcxproj">
+      <Project>{A7BD8195-E9B5-3237-AB46-8148E39C4213}</Project>
+      <Name>primeMultiGpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\primeSimple\primeSimple.vcxproj">
+      <Project>{7A59DAAA-F1DE-3C24-B032-4168CE2BCCE9}</Project>
+      <Name>primeSimple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\primeSimplePP\primeSimplePP.vcxproj">
+      <Project>{2F2D4CEC-1731-30E4-8399-8A3E4B25E710}</Project>
+      <Name>primeSimplePP</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\optix6.5\SDK\sutil\sutil_sdk.vcxproj">
+      <Project>{FA1DBAA5-D88F-3AD6-A119-8252791579E0}</Project>
+      <Name>sutil_sdk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
